@@ -4,9 +4,7 @@
 
 using UnityEngine;
 using Bolt;
-using System.Collections;
-using JetBrains.Annotations;
-using System.Runtime.CompilerServices;
+
 
 public class Stars_Alpha_Fade : MonoBehaviour
 {
@@ -26,7 +24,7 @@ public class Stars_Alpha_Fade : MonoBehaviour
         //gradientValues =  Mathf.Lerp(0,255,(2-(Mathf.Clamp(t_24TimeODay, 3, 5)%3))/2);  //*** 0 to 255 RGB Values
         //gradientValues =  (2-(Mathf.Clamp(t_24TimeODay, 3, 5)%3))/2;  //**** 0 t0 1 Alpha key Values
 
-        gradientValues = 1-(Mathf.Clamp(t_24TimeODay, 5, 8) % 5)/ 3;  //**** 0 t0 1 Alpha key Values
+        gradientValues = 1-(Mathf.Clamp(t_24TimeODay, 5, 7) % 5)/ 2;  //**** 0 t0 1 Alpha key Values
 
        // Debug.Log(gradientValues.ToString());
         if (gradientValues == 0)

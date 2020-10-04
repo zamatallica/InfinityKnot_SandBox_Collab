@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - DirectionalLight: {instanceID: 0}
-  - Preset: {fileID: 11400000, guid: af826d63c5ebc5b4daf1c8d7fc11c675, type: 2}
+  - Preset: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

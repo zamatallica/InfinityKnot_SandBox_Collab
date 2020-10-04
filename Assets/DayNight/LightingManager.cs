@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ *   Alejandro Escobedo 10/04/2020  Added Cloud Light  coloring, must be used with [BFW]SimpleDynamicClouds Asset in order to work. By Using LowClow / highCloud Material Asset
+ * 
+ */
+
+
+using Ludiq;
+using UnityEngine;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -6,6 +13,9 @@ public class LightingManager : MonoBehaviour
     //Scene References
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
+    public Material HighClouds;
+    public Material LowClouds;
+
     //Variables
     [SerializeField, Range(0, 24)] private float TimeOfDay;
 
@@ -34,6 +44,17 @@ public class LightingManager : MonoBehaviour
         //Set ambient and fog
         RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = Preset.FogColor.Evaluate(timePercent);
+
+        //set the Particle Clouds color (Low and High clouds)
+        // var matHighClouds = HighClouds.GetComponent<Material>();
+        HighClouds.SetColor("_CloudColor", Preset.HighClouds.Evaluate(timePercent));
+        LowClouds.SetColor("_CloudColor", Preset.LowClouds.Evaluate(timePercent));
+        //Debug.Log(matColor.ToString());
+
+
+
+        //Debug.Log(Preset.FogColor.Evaluate(timePercent).ToString());
+
 
         //If the directional light is set then rotate and set it's color, I actually rarely use the rotation because it casts tall shadows unless you clamp the value
         if (DirectionalLight != null)
