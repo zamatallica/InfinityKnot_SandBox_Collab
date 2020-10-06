@@ -11,7 +11,7 @@
 /[Uu]ser[Ss]ettings/
 /Assets/I_*
 /Assets/i_*
-
+/Assets/*.meta
 
 
 # MemoryCaptures can get excessive in size.
