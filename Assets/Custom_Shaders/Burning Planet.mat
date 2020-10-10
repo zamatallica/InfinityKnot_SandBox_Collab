@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GridAnimated
+  m_Name: Burning Planet
   m_Shader: {fileID: -6465566751694194690, guid: 66417bd35d53b7e4db1c2fe28ae528ac,
     type: 3}
   m_ShaderKeywords: 
@@ -57,7 +57,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_5DF917A8: 0.9
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -80,13 +79,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_FB1CD230: {r: 0.09411765, g: 1.2862746, b: 0.10980392, a: 0}
-    - Vector2_8C5EF054: {r: 30, g: 30, b: 0, a: 0}
+    - Color_FB1CD230: {r: 10.445343, g: 5.9609547, b: 0, a: 0}
+    - Vector2_8C5EF054: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &6437077625784377209
+--- !u!114 &676633759535096540
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
