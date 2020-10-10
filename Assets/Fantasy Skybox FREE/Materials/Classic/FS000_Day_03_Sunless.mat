@@ -64,16 +64,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlendCubemaps_1_2: 0
-    - _BlendCubemaps_2_3: 0
-    - _BlendCubemaps_3_4: 0
+    - _BlendCubemaps_1_2: 0.7430379
+    - _BlendCubemaps_2_3: 1
+    - _BlendCubemaps_3_4: 1
     - _BlendCubemaps_4_1: 1
-    - _Checker1: 0
-    - _Checker2: 0
-    - _Checker3: 0
+    - _Checker1: 1
+    - _Checker2: 1
+    - _Checker3: 1
     - _Checker4: 1
     - _Exposure: 1
-    - _Rotation: 1.3497542
+    - _Rotation: 13.231352
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Tint: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
