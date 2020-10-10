@@ -9,18 +9,24 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/Assets/I_*
-/Assets/i_*
-*.meta
 
-
+# UNITY SHARED PROJECT ASSETS  (Trough Resilio ALV!)
+/Assets/Allsky
+/Assets/Darth_Artisan
+/Assets/Ludiq
+/Assets/Plugin
+/Assets/Prefab Brush
+/Assets/Stylize Snow Texture
+/Assets/TerrainTexturesPackFree
+/Assets/\[BFW\]SimpleDynamicClouds
+/Assets/Install Bolt
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-#!/[Aa]ssets/**/*.meta
+!/[Aa]ssets/**/*.meta
 
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
