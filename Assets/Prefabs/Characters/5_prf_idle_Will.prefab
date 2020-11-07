@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &13084812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13084813}
+  m_Layer: 0
+  m_Name: CamCollitionPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &13084813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13084812}
+  m_LocalRotation: {x: 0.10607715, y: -0.06416648, z: 0.0068596825, w: 0.99226177}
+  m_LocalPosition: {x: 4.6062293, y: 0.40426064, z: -25.943245}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4785217728597544805}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 12.204, y: -719.503, z: 0}
+--- !u!1 &1955779852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955779853}
+  m_Layer: 0
+  m_Name: TargetCollitionPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1955779853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955779852}
+  m_LocalRotation: {x: 0.10607714, y: -0.06416648, z: 0.0068596834, w: 0.9922617}
+  m_LocalPosition: {x: 4.6547027, y: 0.4044094, z: -26.2}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4785217728597544805}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 12.204, y: -727.4, z: 0}
 --- !u!1 &123743619018163853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,10 +5742,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4785217728597544802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.839999, z: 0}
+  m_LocalPosition: {x: 0, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4785217728779602072}
+  - {fileID: 1955779853}
+  - {fileID: 13084813}
   m_Father: {fileID: 5035652577149160494}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5788,7 +5850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"MouseX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"MouseY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"moveCheckX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"Xbobx_Controller_Interface","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"CameraToTargetOffset","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ControllerY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"X_preClamp","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"isMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"MouseX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"MouseY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"moveCheckX","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"Xbobx_Controller_Interface","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"CameraToTargetOffset","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ControllerY","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"X_preClamp","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"isMoving","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"Cam_Initial_Z","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"isCameraColliding","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"CameratoColliderDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"v3_hitPoint","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 0}
 --- !u!114 &4785217728743569768
@@ -5862,7 +5924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4785217728779602073}
   m_LocalRotation: {x: 0.10607714, y: -0.06416648, z: 0.0068596834, w: 0.9922617}
-  m_LocalPosition: {x: 4.6547027, y: 0.4044094, z: -25.028423}
+  m_LocalPosition: {x: 4.6547027, y: 0.4044094, z: -26.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4785217728743569769}
@@ -5929,7 +5991,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5668321066539406996}
-  m_LocalRotation: {x: -0, y: 0.09179784, z: -0, w: 0.99577767}
+  m_LocalRotation: {x: 0, y: 0.091797076, z: 0, w: 0.9957777}
   m_LocalPosition: {x: -0.11060274, y: -0, z: -0.018480778}
   m_LocalScale: {x: 0.2, y: 0.20000003, z: 0.20000002}
   m_Children:
